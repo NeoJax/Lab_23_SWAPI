@@ -6,6 +6,14 @@
 }
 @model Planet
 
-<p>@Model.name</p>
-<p>@Model.rotation_period</p>
-<p>@Model.orbital_period</p>
+<table>
+    <tr><td>Name: @Model.name</td></tr>
+    <tr><td>Rotation Period: @Model.rotation_period</td></tr>
+    <tr><td>Orbital Period: @Model.orbital_period</td></tr>
+    <tr><td>Diameter: @Model.diameter</td></tr>
+    <tr><td>Climate: @Model.climate</td></tr>
+    <tr><td>Gravity: @Model.gravity</td></tr>
+    <tr><td>Terrain: @Model.terrain</td></tr>
+    <tr><td>Surface Water: @Model.surface_water</td></tr>
+    <tr><td>Population: @Model.population</td></tr>
+</table>

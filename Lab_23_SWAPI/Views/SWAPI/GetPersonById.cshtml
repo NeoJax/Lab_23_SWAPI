@@ -6,6 +6,13 @@
 }
 @model Person
 
-<p>@Model.name</p>
-<p>@Model.height</p>
-<p>@Model.mass</p>
+<table>
+    <tr><td>Name: @Model.name</td></tr>
+    <tr><td>Height: @Model.height</td></tr>
+    <tr><td>Mass: @Model.mass</td></tr>
+    <tr><td>Hair Color: @Model.hair_color</td></tr>
+    <tr><td>Skin Color: @Model.skin_color</td></tr>
+    <tr><td>Eye Color: @Model.eye_color</td></tr>
+    <tr><td>Birth Year: @Model.birth_year</td></tr>
+    <tr><td>Gender: @Model.gender</td></tr>
+</table>

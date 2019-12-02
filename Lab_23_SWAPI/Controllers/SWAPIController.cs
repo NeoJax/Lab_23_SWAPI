@@ -30,7 +30,7 @@ namespace Lab_23_SWAPI.Controllers
         public async Task<IActionResult> DisplayPlanets()
         {
             var response = await _client.GetAsync($"planets/");
-            var planets = await response.Content.ReadAsAsync<List<Planet>>();
+            var planets = await response.Content.ReadAsAsync<PlanetsRoot>();
             return View(planets);
         }
 

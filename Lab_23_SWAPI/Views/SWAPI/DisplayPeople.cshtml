@@ -4,9 +4,16 @@
 @{
     ViewData["Title"] = "DisplayPeople";
 }
-@model List<Person>
+@model PeopleRoot
 
-@foreach (var person in Model)
-{
-    <p>@person.name</p>
-}
+<form action="../SWAPI/GetPersonById" method="post">
+    <select name="id">
+        @for (int i = 0; i < Model.results.Count; i++)
+        {
+            int k = i + 1;
+            <option value="@k">@Model.results[i].name</option>
+        }
+    </select>
+
+    <input type="submit" value="Submit"/>
+</form>
