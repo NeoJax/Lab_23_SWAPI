@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "SWAPI";
+}
+<form action="../SWAPI/GetPersonById" method="post">
+    <input type="number" name="Id" placeholder="Person Id"/>
+    <input type="submit" value="Submit" />
+</form>
+<form action="../SWAPI/GetPlanetById" method="post">
+    <input type="number" name="Id" placeholder="Planet Id"/>
+    <input type="submit" value="Submit" />
+</form>
+<a asp-controller="SWAPI" asp-action="DisplayPeople">Display People</a>
+<a asp-controller="SWAPI" asp-action="DisplayPlanets">Display Planets</a>
